@@ -1,8 +1,7 @@
 {
   "project": "MOVA - Machine-Optimized Validation Authority",
   "status": "PRE-ALPHA",
-  "deployed": "2025-06-28T02:12:00Z",
+  "deployed": "2025-06-27T19:58:04Z",
   "warning": "Experimental data - use at your own risk",
-  "source": "https://github.com/movanet/Legal-AI",
-  "data_status": "No processed data yet - awaiting regulation processing"
+  "source": "https://github.com/movanet/Legal-AI"
 }

@@ -1,0 +1,10 @@
+{
+  "total_processed": 20,
+  "successful": 20,
+  "failed": 0,
+  "total_time": 4.363129377365112,
+  "average_time": 0.21815646886825563,
+  "html_files_generated": 3,
+  "processing_mode": "enhanced",
+  "ai_analysis_enabled": true
+}

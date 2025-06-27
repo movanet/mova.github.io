@@ -1,0 +1,27 @@
+# GitHub Pages Configuration for MOVA
+# Machine-Optimized Validation Authority
+
+# Site settings
+title: MOVA - Machine-Optimized Validation Authority
+description: Experimental legal intelligence platform for Indonesian law. Pre-alpha software - use at your own risk.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mova.net" # the base hostname & protocol for your site
+
+# Build settings
+theme: null # We're using custom HTML/CSS
+plugins: []
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# GitHub Pages
+github: [metadata]

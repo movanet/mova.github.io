@@ -1,0 +1,28 @@
+[
+  {
+    "source_id": "pp-101-2014-article-1",
+    "target_id": "uu-25-2007-article-5",
+    "relationship_type": "IMPLEMENTS",
+    "confidence": 0.85,
+    "extraction_method": "pattern_match",
+    "supporting_text": "sebagaimana diatur dalam Undang-Undang Nomor 25 Tahun 2007 tentang Penanaman Modal",
+    "metadata": {
+      "citation_type": "explicit",
+      "processing_date": "2025-06-26T16:00:00Z",
+      "llm_model": "phi3-mini"
+    }
+  },
+  {
+    "source_id": "pp-101-2014-article-2",
+    "target_id": "pp-101-2014-article-1",
+    "relationship_type": "REFERS_TO",
+    "confidence": 0.75,
+    "extraction_method": "llm_analysis",
+    "supporting_text": "definisi sebagaimana dimaksud dalam Pasal 1",
+    "metadata": {
+      "citation_type": "internal",
+      "processing_date": "2025-06-26T16:00:00Z",
+      "llm_model": "phi3-mini"
+    }
+  }
+]

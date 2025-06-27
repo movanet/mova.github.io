@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVA - Machine-Optimized Validation Authority (Pre-Alpha)</title>
+    <meta name="description" content="Experimental legal intelligence platform for Indonesian law. Pre-alpha software - use at your own risk.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="assets/css/mova-styles.css">
+</head>
+<body class="mova-app">
+    <!-- MANDATORY: Pre-Alpha Warning Banner -->
+    <div class="mova-pre-alpha-banner">
+        <div class="mova-warning-icon">⚠️</div>
+        <div class="mova-warning-content">
+            <strong>PRE-ALPHA SOFTWARE</strong>
+            <p>Experimental software under development. Use at your own risk.</p>
+        </div>
+    </div>
+    
+    <header class="mova-header">
+        <div class="mova-brand">
+            <h1 class="mova-logo">MOVA</h1>
+            <span class="mova-status-badge">PRE-ALPHA</span>
+            <span class="mova-subtitle">Machine-Optimized Validation Authority</span>
+        </div>
+        <nav class="mova-navigation">
+            <a href="#overview" class="mova-nav-link">Overview</a>
+            <a href="#features" class="mova-nav-link">Features</a>
+            <a href="#data-access" class="mova-nav-link">Data Access</a>
+            <a href="#api" class="mova-nav-link">API</a>
+        </nav>
+    </header>
+    
+    <main class="mova-content">
+        <section id="overview" class="mova-section">
+            <div class="mova-container">
+                <h2>Indonesian Legal Intelligence Platform</h2>
+                <div class="mova-experimental-feature">
+                    <p>MOVA processes Indonesian legal documents into AI-consumable data packets, creating structured knowledge graphs for legal relationship discovery.</p>
+                </div>
+                
+                <div class="mova-stats-grid">
+                    <div class="mova-stat-card">
+                        <h3>0</h3>
+                        <p>Regulations Processed</p>
+                    </div>
+                    <div class="mova-stat-card">
+                        <h3>0</h3>
+                        <p>Legal Relationships</p>
+                    </div>
+                    <div class="mova-stat-card">
+                        <h3>0</h3>
+                        <p>Articles Analyzed</p>
+                    </div>
+                    <div class="mova-stat-card">
+                        <h3>PRE-ALPHA</h3>
+                        <p>Development Stage</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="mova-section">
+            <div class="mova-container">
+                <h2>Experimental Features</h2>
+                <div class="mova-feature-grid">
+                    <div class="mova-feature-card">
+                        <h3>🤖 AI-Powered Analysis</h3>
+                        <p>Using Phi-3-mini (3.8B) and IndoBERT for Indonesian legal text processing</p>
+                        <span class="mova-accuracy-warning">Accuracy varies - human review required</span>
+                    </div>
+                    <div class="mova-feature-card">
+                        <h3>🔗 Relationship Extraction</h3>
+                        <p>Automatic discovery of amendments, references, and implementations</p>
+                        <span class="mova-accuracy-warning">Experimental extraction - verify results</span>
+                    </div>
+                    <div class="mova-feature-card">
+                        <h3>📊 Knowledge Graph</h3>
+                        <p>Neo4j-powered graph database for complex legal relationships</p>
+                        <span class="mova-accuracy-warning">Graph may contain incomplete data</span>
+                    </div>
+                    <div class="mova-feature-card">
+                        <h3>🌐 HTML Data Packets</h3>
+                        <p>Self-contained HTML files with embedded metadata for AI agents</p>
+                        <span class="mova-accuracy-warning">Format under active development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-access" class="mova-section">
+            <div class="mova-container">
+                <h2>Data Access Points</h2>
+                <div class="mova-experimental-feature">
+                    <p>Access processed legal data through multiple formats optimized for AI consumption:</p>
+                </div>
+                
+                <div class="mova-access-grid">
+                    <div class="mova-access-card">
+                        <h3>📄 Individual Articles</h3>
+                        <code class="mova-code">/data/{type}/{year}/{number}/articles/individual/{id}.html</code>
+                        <p>Single article with full metadata and relationships</p>
+                    </div>
+                    <div class="mova-access-card">
+                        <h3>📦 Batch Articles</h3>
+                        <code class="mova-code">/data/{type}/{year}/{number}/articles/{range}.html</code>
+                        <p>Multiple articles in a single file for efficient processing</p>
+                    </div>
+                    <div class="mova-access-card">
+                        <h3>🔍 Metadata</h3>
+                        <code class="mova-code">/data/{type}/{year}/{number}/metadata.json</code>
+                        <p>Regulation metadata, statistics, and processing information</p>
+                    </div>
+                    <div class="mova-access-card">
+                        <h3>🔗 Relationships</h3>
+                        <code class="mova-code">/data/{type}/{year}/{number}/relationships.json</code>
+                        <p>All extracted legal relationships in JSON format</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="api" class="mova-section">
+            <div class="mova-container">
+                <h2>API Endpoints (Coming Soon)</h2>
+                <div class="mova-error-experimental">
+                    <p>API endpoints are not yet available in this pre-alpha version.</p>
+                </div>
+                
+                <div class="mova-api-preview">
+                    <h3>Planned Endpoints:</h3>
+                    <ul>
+                        <li><code>GET /api/regulations/{id}</code> - Retrieve regulation metadata</li>
+                        <li><code>GET /api/articles/{id}</code> - Get individual article</li>
+                        <li><code>GET /api/relationships/{id}</code> - Query legal relationships</li>
+                        <li><code>POST /api/search</code> - Search across regulations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="mova-footer">
+        <div class="mova-disclaimer">
+            <h4>⚠️ EXPERIMENTAL SOFTWARE DISCLAIMER</h4>
+            <p><strong>PRE-ALPHA STATUS:</strong> MOVA is experimental software under active development. 
+            Legal relationship extraction may contain errors. Do not use for production legal work, 
+            compliance decisions, or legal advice. Use at your own risk.</p>
+            <p>&copy; 2024 MOVA - Machine-Optimized Validation Authority (Experimental)</p>
+            <p>Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+    
+    <!-- GitHub Badge -->
+    <div class="mova-github-badge">
+        <a href="https://github.com/movanet/Legal-AI" target="_blank">View on GitHub</a>
+    </div>
+</body>
+</html>

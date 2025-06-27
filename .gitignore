@@ -1,2 +1,44 @@
-.vscode/settings.json
-desktop.ini
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python files (should not be in output)
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+env/
+
+# Source code (should not be deployed)
+*.py
+*.ipynb
+src/
+scripts/
+tests/
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+
+# Environment files
+.env
+.env.*
+
+# Documentation source
+*.md
+!README.md
+
+# Build artifacts
+build/
+dist/
+*.egg-info/

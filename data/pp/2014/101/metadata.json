@@ -1,0 +1,89 @@
+{
+  "regulation": {
+    "id": "pp-101-2014",
+    "type": "Peraturan Pemerintah",
+    "number": "101",
+    "year": 2014,
+    "title": "Pengelolaan Limbah Bahan Berbahaya dan Beracun",
+    "full_citation": "Peraturan Pemerintah Republik Indonesia Nomor 101 Tahun 2014",
+    "status": "active",
+    "effective_date": "2014-12-15",
+    "authority": "Presiden Republik Indonesia",
+    "gazette_date": "2014-12-12",
+    "gazette_number": "311",
+    "considerations": [
+      "Undang-Undang Nomor 32 Tahun 2009 tentang Perlindungan dan Pengelolaan Lingkungan Hidup",
+      "Undang-Undang Nomor 18 Tahun 2008 tentang Pengelolaan Sampah"
+    ],
+    "history": {
+      "amends": [],
+      "amended_by": [],
+      "revokes": [],
+      "revoked_by": null,
+      "implements": [
+        "uu-32-2009",
+        "uu-18-2008"
+      ]
+    },
+    "structure": {
+      "total_chapters": 12,
+      "total_articles": 259,
+      "total_verses": 485,
+      "has_appendices": true,
+      "appendices_count": 3
+    },
+    "key_definitions": [
+      "Limbah Bahan Berbahaya dan Beracun",
+      "Pengelolaan Limbah B3",
+      "Penghasil Limbah B3",
+      "Pengumpul Limbah B3",
+      "Pemanfaat Limbah B3"
+    ],
+    "subjects": [
+      "Lingkungan Hidup",
+      "Pengelolaan Limbah",
+      "Bahan Berbahaya",
+      "Perizinan",
+      "Pengawasan"
+    ],
+    "confidence_score": 0.87,
+    "extraction_method": "phi3-llm-hybrid",
+    "processing_timestamp": "2025-06-26T16:15:00Z",
+    "source_file": "PP_Nomor_101_Tahun_2014.pdf",
+    "file_size_mb": 2.4,
+    "last_updated": "2025-06-26T16:15:00Z"
+  },
+  "processing": {
+    "version": "1.0.0",
+    "processor": "regulation-ai-data-lake",
+    "llm_model": "phi3-mini",
+    "confidence_avg": 0.82,
+    "total_relationships": 3,
+    "extraction_time_seconds": 185.4,
+    "validation_status": "passed"
+  },
+  "statistics": {
+    "chunks_count": 259,
+    "articles_count": 259,
+    "relationships_count": 3,
+    "citations_extracted": 47,
+    "confidence_distribution": {
+      "high_confidence": 195,
+      "medium_confidence": 52,
+      "low_confidence": 12
+    },
+    "relationship_types": {
+      "IMPLEMENTS": 1,
+      "REFERS_TO": 2,
+      "AMENDS": 0,
+      "REVOKES": 0
+    }
+  },
+  "files": {
+    "individual_articles": "articles/individual/",
+    "batch_articles": "articles/",
+    "relationships": "relationships.json",
+    "sitemap": "sitemap.xml"
+  },
+  "generated_at": "2025-06-26T16:15:00Z"
+}

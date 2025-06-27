@@ -1,0 +1,25 @@
+# Regulation AI Data Lake - Robots.txt
+# Optimized for AI agent discovery and crawling
+
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://data.legreg.io/sitemap-index.xml
+Sitemap: https://data.legreg.io/data/sitemaps/recent.xml
+
+# Crawl delay (be respectful)
+Crawl-delay: 1
+
+# Priority paths for AI agents
+# Individual articles: /data/{reg_type}/{year}/{number}/articles/individual/
+# Batch articles: /data/{reg_type}/{year}/{number}/articles/
+# Metadata: /data/{reg_type}/{year}/{number}/metadata.json
+# Relationships: /data/{reg_type}/{year}/{number}/relationships.json
+
+# Disallow temporary or processing directories
+Disallow: /logs/
+Disallow: /temp/
+Disallow: /*.log
+
+# Last updated: 2025-06-26T16:00:00Z

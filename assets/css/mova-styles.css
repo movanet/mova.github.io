@@ -1,0 +1,420 @@
+/* MOVA - Machine-Optimized Validation Authority Styles */
+/* Pre-Alpha Experimental Software */
+
+:root {
+    /* Primary Colors - Experimental/Research Focus */
+    --mova-primary: #1a365d;      /* Deep Navy Blue - Technical Authority */
+    --mova-secondary: #2d3748;    /* Charcoal Gray - Sophistication */
+    --mova-accent: #c53030;       /* Deep Red - Warning/Experimental */
+    
+    /* Pre-Alpha Status Colors */
+    --mova-warning: #ed8936;      /* Orange - Pre-Alpha warnings */
+    --mova-experimental: #805ad5; /* Purple - Experimental features */
+    --mova-caution: #e53e3e;      /* Red - Use with caution */
+    
+    /* Supporting Colors */
+    --mova-success: #38a169;      /* Forest Green - Working features */
+    --mova-info: #3182ce;         /* Blue - Information */
+    --mova-light: #f7fafc;        /* Light Gray - Background */
+    --mova-white: #ffffff;        /* Pure White - Clean */
+    
+    /* Typography */
+    --mova-font-header: "Georgia", "Times New Roman", serif;
+    --mova-font-body: "Inter", "Segoe UI", "Roboto", sans-serif;
+    --mova-font-code: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--mova-font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--mova-secondary);
+    background-color: var(--mova-light);
+}
+
+/* MANDATORY - Pre-Alpha Status Classes */
+.mova-pre-alpha-banner {
+    background: var(--mova-warning);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--mova-caution);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mova-warning-icon {
+    font-size: 24px;
+}
+
+.mova-warning-content strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.mova-warning-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.mova-status-badge {
+    background: var(--mova-experimental);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+/* Header Styles */
+.mova-header {
+    background: var(--mova-white);
+    border-bottom: 2px solid var(--mova-primary);
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mova-brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mova-logo {
+    font-family: var(--mova-font-header);
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--mova-primary);
+    letter-spacing: -0.025em;
+    margin: 0;
+    display: inline-block;
+}
+
+.mova-subtitle {
+    display: block;
+    font-size: 16px;
+    color: var(--mova-secondary);
+    margin-top: 8px;
+}
+
+/* Navigation */
+.mova-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mova-nav-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 8px;
+    color: var(--mova-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.mova-nav-link:hover {
+    color: var(--mova-experimental);
+    border-bottom-color: var(--mova-experimental);
+}
+
+/* Content Sections */
+.mova-content {
+    min-height: calc(100vh - 300px);
+}
+
+.mova-section {
+    padding: 60px 0;
+}
+
+.mova-section:nth-child(even) {
+    background: var(--mova-white);
+}
+
+.mova-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mova-section h2 {
+    font-family: var(--mova-font-header);
+    font-size: 36px;
+    color: var(--mova-primary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Experimental Feature Indicators */
+.mova-experimental-feature {
+    border-left: 4px solid var(--mova-experimental);
+    background: rgba(128, 90, 213, 0.1);
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.mova-experimental-feature::before {
+    content: "🧪 EXPERIMENTAL: ";
+    font-weight: bold;
+    color: var(--mova-experimental);
+}
+
+/* Stats Grid */
+.mova-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.mova-stat-card {
+    background: var(--mova-white);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--mova-primary);
+}
+
+.mova-stat-card h3 {
+    font-size: 48px;
+    color: var(--mova-primary);
+    margin-bottom: 10px;
+}
+
+.mova-stat-card p {
+    color: var(--mova-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Feature Grid */
+.mova-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mova-feature-card {
+    background: var(--mova-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--mova-experimental);
+}
+
+.mova-feature-card h3 {
+    color: var(--mova-primary);
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.mova-feature-card p {
+    color: var(--mova-secondary);
+    margin-bottom: 15px;
+}
+
+/* Access Grid */
+.mova-access-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mova-access-card {
+    background: var(--mova-white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mova-access-card h3 {
+    color: var(--mova-primary);
+    margin-bottom: 15px;
+}
+
+.mova-code {
+    display: block;
+    background: var(--mova-secondary);
+    color: var(--mova-white);
+    padding: 12px;
+    border-radius: 4px;
+    font-family: var(--mova-font-code);
+    font-size: 14px;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+/* Warning and Error States */
+.mova-accuracy-warning {
+    background: #fef5e7;
+    border: 2px solid var(--mova-warning);
+    color: #744210;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.mova-accuracy-warning::before {
+    content: "📊 ACCURACY NOTE: ";
+    font-weight: bold;
+}
+
+.mova-error-experimental {
+    background: #fed7d7;
+    border: 2px solid var(--mova-caution);
+    color: #742a2a;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.mova-error-experimental::before {
+    content: "⚠️ EXPERIMENTAL ERROR: ";
+    font-weight: bold;
+}
+
+/* API Preview */
+.mova-api-preview {
+    background: var(--mova-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.mova-api-preview h3 {
+    color: var(--mova-primary);
+    margin-bottom: 15px;
+}
+
+.mova-api-preview ul {
+    list-style: none;
+}
+
+.mova-api-preview li {
+    padding: 8px 0;
+}
+
+.mova-api-preview code {
+    background: var(--mova-secondary);
+    color: var(--mova-white);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: var(--mova-font-code);
+    font-size: 14px;
+}
+
+/* Footer */
+.mova-footer {
+    background: var(--mova-secondary);
+    color: var(--mova-white);
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.mova-disclaimer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.mova-disclaimer h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--mova-warning);
+}
+
+.mova-disclaimer p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* GitHub Badge */
+.mova-github-badge {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #24292e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 999;
+}
+
+.mova-github-badge a {
+    color: white;
+    text-decoration: none;
+}
+
+.mova-github-badge::before {
+    content: "📂 ";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mova-logo {
+        font-size: 36px;
+    }
+    
+    .mova-navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mova-nav-link {
+        margin: 4px;
+    }
+    
+    .mova-stats-grid,
+    .mova-feature-grid,
+    .mova-access-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mova-github-badge {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+        display: block;
+        width: fit-content;
+    }
+}
+
+/* Utility Classes */
+.mova-text-center {
+    text-align: center;
+}
+
+.mova-mt-20 {
+    margin-top: 20px;
+}
+
+.mova-mb-20 {
+    margin-bottom: 20px;
+}
+
+.mova-hidden {
+    display: none;
+}

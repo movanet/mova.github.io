@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Individual Regulation Sitemaps -->
+  <sitemap>
+    <loc>https://data.legreg.io/data/pp/2014/101/sitemap.xml</loc>
+    <lastmod>2025-06-26T16:00:00Z</lastmod>
+  </sitemap>
+  
+  
+  <!-- Category-based Sitemaps -->
+  <sitemap>
+    <loc>https://data.legreg.io/data/sitemaps/by-year.xml</loc>
+    <lastmod>2025-06-26T16:00:00Z</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://data.legreg.io/data/sitemaps/by-type.xml</loc>
+    <lastmod>2025-06-26T16:00:00Z</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://data.legreg.io/data/sitemaps/recent.xml</loc>
+    <lastmod>2025-06-26T16:00:00Z</lastmod>
+  </sitemap>
+
+</sitemapindex>
